@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+
+{% block content%}
+
+<div class="bg-dark text-center text-white py-2 mb-4">
+    <h1> Calendrier du mois de {{ month }} {{ year }} de {{ name }}</h1>
+</div><br><br>
+<center>
+    <p>It's {{ time }}</p>
+
+    {{ cal|safe }}
+
+</center>
+    
+{% endblock %}
